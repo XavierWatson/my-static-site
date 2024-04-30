@@ -1,0 +1,139 @@
+<head>
+<link rel='stylesheet' href='styles.css'>
+</head>
+
+<body id='site'>
+<h1>Xavier's Cook-Book</h1>
+<button id='ingredients' class='button'>Ingredients</button>
+<button id='recipies' class='button'>Recipies</button>
+<p>Hello and Welcome to My Kitchen!</p>
+<ul id='pizza'>
+    <%= image_tag 'pizza.jpg' %>
+    <li>tomato sauce</li>
+    <li>dough</li>
+    <li>parmesean cheese</li>
+    <li>Basil</li>
+    <li>Yeast</li>
+    <li>Olive Oil</li>
+    <li>Pepperoni</li>
+    <li>Mozerrela</li>
+    <li>Chives</li>
+</ul>
+<ul id='pie'>
+    <%= image_tag 'pumpkin pie.jpg' %>
+    <li>Puree Pumpkin</li>
+    <li>All-Spice</li>
+    <li>Pie Crust</li>
+    <li>Egg</li>
+    <li>Milk</li>
+    <li>Butter</li>
+
+</ul>
+<ul id='cake'>
+    <%= image_tag 'lava cake.jpg' %>
+    <li>Cocoa Powder</li>
+    <li>Sugar</li>
+    <li>Fudge</li>
+    <li>Vanilla Extract</li>
+    <li>Vegetable Oil</li>
+    <li>All-Spice</li>
+    <li>Pie Crust</li>
+    <li>Egg</li>
+    <li>Milk</li>
+    <li>Butter</li>
+</ul>
+<ul id='lasagna'>
+<%= image_tag 'lasagna.jpg' %>
+    <li>tomato sauce</li>
+    <li>lasagna sheets</li>
+    <li>parmesean cheese</li>
+    <li>Basil</li>
+    <li>Minces Pork</li>
+    <li>Olive Oil</li>
+</ul>
+<ul id='alfredo'>
+<%= image_tag 'alfredo.jpg' %>
+    <li>Alfredo sauce</li>
+    <li>Linguinne Noodles</li>
+    <li>parmesean cheese</li>
+    <li>Basil</li>
+    <li>Italian Chicken</li>
+    <li>Olive Oil</li>
+    <li>Milk</li>
+</ul>
+
+<ul id='r_pizza'>
+    <%= image_tag 'pizza.jpg' %>
+    <li>Pizza Recipie Here</li>
+</ul>
+<ul id='r_pie'>
+    <%= image_tag 'pumpkin pie.jpg' %>
+    <li>Pie Recipie Here</li>
+</ul>
+<ul id='r_cake'>
+    <%= image_tag 'lava cake.jpg' %>
+    <li>Cake Recipie Here</li>
+</ul>
+<ul id='r_lasagna'>
+    <%= image_tag 'lasagna.jpg' %>
+    <li>Lasagna Recipie Here</li>
+</ul>
+<ul id='r_alfredo'>
+    <%= image_tag 'alfredo.jpg' %>
+    <li>Alfredo Recipie Here</li>
+</ul>
+
+<ul>
+<h1>Contact Me:</h1>
+<li>Xavier Watson</li>
+<li>Email: chefxavier@cookin.com</li>
+<li>Phone: 901-COO-KING</li>
+</ul>
+</body>
+
+<script>
+const ingredients = document.getElementById('ingredients')
+const recipies = document.getElementById('recipies')
+const pizza = document.getElementById('pizza')
+const pie = document.getElementById('pie')
+const cake = document.getElementById('cake')
+const lasagna = document.getElementById('lasagna')
+const alfredo = document.getElementById('alfredo')
+const r_pizza = document.getElementById('r_pizza')
+const r_pie = document.getElementById('r_pie')
+const r_cake = document.getElementById('r_cake')
+const r_lasagna = document.getElementById('r_lasagna')
+const r_alfredo = document.getElementById('r_alfredo')
+ingredients.addEventListener('click', function(event) {
+    ingredientsview();
+    });
+function ingredientsview(element){
+pizza.style.display = 'block';
+pie.style.display = 'block';
+cake.style.display = 'block';
+lasagna.style.display = 'block';
+alfredo.style.display = 'block';
+
+r_pizza.style.display = 'none';
+r_pie.style.display = 'none';
+r_cake.style.display = 'none';
+r_lasagna.style.display = 'none';
+r_alfredo.style.display = 'none';
+}
+recipies.addEventListener('click', function(event) {
+    recipiesview();
+    });
+function recipiesview(element){
+pizza.style.display = 'none';
+pie.style.display = 'none';
+cake.style.display = 'none';
+lasagna.style.display = 'none';
+alfredo.style.display = 'none';
+
+r_pizza.style.display = 'block';
+r_pie.style.display = 'block';
+r_cake.style.display = 'block';
+r_lasagna.style.display = 'block';
+r_alfredo.style.display = 'block';
+}
+</script>
